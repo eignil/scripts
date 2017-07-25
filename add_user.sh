@@ -32,7 +32,7 @@ echo
 #echo "---------------------------"
 #echo
 
-useradd -d /home/${username} -s /bin/bash ${username}
+useradd -d /home/${username} -s /bin/bash -m ${username}
 
 if [ $? -ne 0 ]; then
     echo "Add new user ${username} failed!"
